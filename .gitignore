@@ -5,3 +5,12 @@
 /.settings/
 docker/*/*.sql
 docker/*/*.sql-e
+.DS_Store
+docker/mongo/target/moduleSchemas.js
+docker/mysql/target/coreSchema.sql
+docker/mysql/target/coreSchema.sql-e
+docker/mysql/target/moduleSchemas.sql
+docker/mysql/target/moduleSchemas.sql-e
+docker/mysql/target/updatev3_0tov3_1.sql
+src/.DS_Store
+src/main/.DS_Store

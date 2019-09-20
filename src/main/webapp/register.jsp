@@ -3,24 +3,6 @@
 <%
 	ShepherdLogManager.logEvent(request.getRemoteAddr(), request.getHeader("X-Forwarded-For"), "DEBUG: register.jsp *************************");
 
-/**
- * This file is part of the Security Shepherd Project.
- * 
- * The Security Shepherd project is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.<br/>
- * 
- * The Security Shepherd project is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.<br/>
- * 
- * You should have received a copy of the GNU General Public License
- * along with the Security Shepherd project.  If not, see <http://www.gnu.org/licenses/>. 
- * 
- * @author Mark Denihan
- */
 if(OpenRegistration.isEnabled())
 {
 HttpSession ses = request.getSession();
@@ -89,7 +71,7 @@ if(ses.getAttribute("errorMessage") != null)
 <jsp:include page="translation-select.jsp" />
 <!-- start header -->
 <div id="header">
-	<h1>Security Shepherd</h1>
+	<h1>Gorilla Logic CTF 2019</h1>
 </div>
 <!-- end header -->
 <!-- start page -->
@@ -118,18 +100,18 @@ if(ses.getAttribute("errorMessage") != null)
 				</table>
 				
 				<br/>
-				<div style="width: 400px; border-color:#A878EF; border-style:dashed; background-color: #D4D4D4;padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:5px;" align="justify">
-					<center><big style="color:#A878EF;">SHEPHERD DISCLAIMER</big></center>
+				<div style="width: 400px; border-color:#1093CE; border-style:dashed; background-color: #D4D4D4;padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:5px;" align="justify">
+					<center><big style="color:#1093CE;">Gorilla Logic CTF DISCLAIMER</big></center>
 					<br/>
 					<br/>
-					The Security Shepherd project is for educational purposes only. 
+					The Gorilla Logic CTF project is for educational purposes only. 
 					Do not attempt to use these techniques without authorization. 
 					If you are caught engaging in unauthorized hacking, 
 					most companies will take legal action. 
 					Claiming that you were doing security research 
 					will not protect you. 
 					<br/><br/>
-					Security Shepherd is a safe playground 
+					Gorilla Logic CTF is a safe playground 
 					for you to improve your web application security skills
 					and only encourages white hat or ethical hacking behaviour. 
 					<br/>
@@ -143,7 +125,7 @@ if(ses.getAttribute("errorMessage") != null)
 			</form>
 		</div>
 		<div id="resultDiv"></div>
-		<div id="loadingSign" style="display: none"><p><h2 class="title">Enrolling Now</h2><p>Please wait as you are enrolled for your Security Shepherd account.</p></p></div>
+		<div id="loadingSign" style="display: none"><p><h2 class="title">Enrolling Now</h2><p>Please wait as you are enrolled for your Gorilla Logic CTF account.</p></p></div>
 	</div>
 	<!-- end content -->
 	<!-- start sidebar -->

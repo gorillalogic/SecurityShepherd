@@ -23,19 +23,4 @@ public class Analytics
 		"</script>";
 	public static String mobileVmLinkBlurb = new String(""
 			+ "To complete this challenge you'll need to use the <a href='http://bit.ly/latestShepherdRelease'>Security Shepherd Android Virtual Machine</a> that contains the app. ");
-	public static String sponsorshipMessage(Locale locale)
-	{
-		//Get Language Bundle
-		ResourceBundle bundle = ResourceBundle.getBundle("i18n.text", locale);
-		return new String("<h2 class=\"title\">" + bundle.getString("sponsorship.title") + "</h2>" +
-			"<p>" +
-			bundle.getString("sponsorship.message.1") +
-			"<br/><br/>" +
-			"<a href=\"http://bit.ly/BccRiskAdvisorySite\"><img src=\"css/images/bccRiskAdvisorySmallLogo.jpg\" alt=\"BCC Risk Advisory\" style=\"margin: 5px;\"/></a>" +
-			"<a href=\"http://bit.ly/EdgeScan\"><img src=\"css/images/edgescanSmallLogo.jpg\" alt=\"EdgeScan\" style=\"margin: 5px;\"/></a>" +
-			"<br/>" +
-			"<a href=\"http://bit.ly/manicode\"><img src=\"css/images/manicode-logo.png\" style=\"margin-top: 5px;\"></a>" +
-			"<br/><a href=\"https://www.axway.com/en\"><img src=\"css/images/axway_logo.png\" style=\"margin: 5px; height: 90px\"></a>" +
-			"</p>");
-	}
 }
