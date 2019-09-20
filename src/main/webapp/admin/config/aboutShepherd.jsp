@@ -2,25 +2,6 @@
 
 <%
 	ShepherdLogManager.logEvent(request.getRemoteAddr(), request.getHeader("X-Forwarded-For"), "DEBUG: aboutShepherd.jsp *************************");
-
-/**
- * This file is part of the Security Shepherd Project.
- * 
- * The Security Shepherd project is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.<br/>
- * 
- * The Security Shepherd project is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.<br/>
- * 
- * You should have received a copy of the GNU General Public License
- * along with the Security Shepherd project.  If not, see <http://www.gnu.org/licenses/>. 
- * 
- * @author Mark Denihan
- */
  
 if (request.getSession() != null)
 {
@@ -50,7 +31,7 @@ if(Validate.validateAdminSession(ses, tokenCookie, tokenParmeter))
 String csrfToken = Encode.forHtml(tokenCookie.getValue());
 String ApplicationRoot = getServletContext().getRealPath("");
 %>
-	<h1 class="title">The OWASP Security Shepherd Project</h1>
+	<h1 class="title">The Gorilla Logic CTF Project</h1>
 	<p>
 		You are currently using Security Shepherd Version 3.2
 		<br><br>
@@ -59,7 +40,6 @@ String ApplicationRoot = getServletContext().getRealPath("");
 		<br><br>
 		Please report any bugs or any feature requests on the <a href="http://bit.ly/securityShepherdGithub">OWASP Security Shepherd Git Repository</a>.
 	</p>
-	<%= Analytics.sponsorshipMessage(new Locale(Validate.validateLanguage(request.getSession()))) %>
 	<br/>
 	<br/>
 	<div id="badData" style="display: none;"></div>

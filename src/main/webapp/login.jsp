@@ -2,26 +2,6 @@
 <%@ include file="translation.jsp" %>
 
 <%
-
-
-/**
- * This file is part of the Security Shepherd Project.
- * 
- * The Security Shepherd project is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.<br/>
- * 
- * The Security Shepherd project is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.<br/>
- * 
- * You should have received a copy of the GNU General Public License
- * along with the Security Shepherd project.  If not, see <http://www.gnu.org/licenses/>. 
- * 
- * @author Mark Denihan
- */
  
 HttpSession ses = request.getSession();
 ShepherdLogManager.logEvent(request.getRemoteAddr(), request.getHeader("X-Forwarded-For"), "Sombody ("+ ses.getAttribute("lang") +") Conntected to login.jsp ...");
@@ -64,7 +44,7 @@ if(ses.getAttribute("loginFailed") != null)
 %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>OWASP Security Shepherd - Login</title>
+	<title>Gorilla Logic CTF 2019 - Login</title>
 
 	<link href="css/theCss.css" rel="stylesheet" type="text/css" media="screen" />
 	<link href="css/theResponsiveCss.css" rel="stylesheet" type="text/css" media="screen">
@@ -75,7 +55,7 @@ if(ses.getAttribute("loginFailed") != null)
 	<jsp:include page="translation-select.jsp" />
 	<!-- start header -->
 	<div id="header">
-		<h1>Security Shepherd</h1>
+		<h1>Gorilla Logic CTF 2019</h1>
 	</div>
 	<!-- end header -->
 	<!-- start page -->
@@ -105,26 +85,12 @@ if(ses.getAttribute("loginFailed") != null)
 				</form>
 				<br/>
 				<br/>
-				<div align="center">
-					<a id="tools" href="javascript:;"><fmt:message key="login.text.proxy_question" /></a>
-					<div id="toolsTable" style="display: none;">
-					<p><fmt:message key="login.text.download_proxy" />;</p>
-					<table>
-						<tr><td align="center"><a href="https://github.com/zaproxy/zaproxy/wiki/Downloads"><fmt:message key="login.link.zap_win" /></a></td></tr>
-						<tr><td align="center"><a href="https://github.com/zaproxy/zaproxy/wiki/Downloads"><fmt:message key="login.link.zap_lin" /></a></td></tr>
-						<tr><td align="center"><a href="https://github.com/zaproxy/zaproxy/wiki/Downloads"><fmt:message key="login.link.zap_mac" /></a></td></tr>
-					</table>
-					</div>
-					<br><a id="showAbout" href="javascript:;"><fmt:message key="generic.text.aboutSecShep" /></a>
-				</div>
 			</div>
 		</div>
 		<div align="justify">
 			
 			<div id="aboutDiv" style="display: none;">
-			<h2 class="title"><fmt:message key="generic.text.aboutSecShep" /></h2>
 			<p id="about_shepherd_blurb"><fmt:message key="login.text.about_blurb" /></p>
-			<%= Analytics.sponsorshipMessage(new Locale(Validate.validateLanguage(request.getSession()))) %>
 			</div>
 		</div>
 		<!-- end content -->

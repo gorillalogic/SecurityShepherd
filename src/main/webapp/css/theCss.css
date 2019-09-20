@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #FFFFFF url(images/grassTile.jpg) repeat-x top center;
-	font-size: 13px;
+	font-size: 14px;
 	color: #090212;
 }
 
@@ -38,7 +38,7 @@ p, ul, ol {
 }
 
 a {
-	color: #9B1AC8;
+	color: #1093CE;
 }
 
 a:hover {
@@ -59,7 +59,7 @@ a:hover {
 
 #header h1, #header p {
 	margin: 0;
-	color: #A878EF;
+	color: #1093CE;
 }
 
 #header h1 {
@@ -71,7 +71,7 @@ a:hover {
 	margin-top: -10px;
 }
 #header a {
-	color: #A878EF;
+	color: #1093CE;
 	text-decoration:none;
 }
 
@@ -109,7 +109,7 @@ a:hover {
 .title {
 	margin: 0;
 	padding-bottom: 5px;
-	border-bottom: 2px solid #A878EF;
+	border-bottom: 2px solid #1093CE;
 }
 
 #sidebar {
@@ -188,7 +188,7 @@ a:hover {
 
 .menuButton {
 	display: block;
-	border-bottom: 3px solid #A878EF;
+	border-bottom: 3px solid #1093CE;
 	background: #D4D4D4;
 	padding: 5px 5px;
 	border-radius: 5px;
@@ -201,16 +201,16 @@ a:hover {
    }
    
 .menuButton:hover {
-   border-top-color: #CC99FF;
+   border-top-color: #1093CE;
    background: #BFBFBF;
    }
 .menuButton:active {
-   border-top-color: #8660BF;
-   background: #8660BF;
+   border-top-color: #1093CE;
+   background: #1093CE;
    }
    
    .scoreBar {
-	background-color: #965BED;
+	background-color: #1093CE;
 	height: 30px;
 	position: relative;
 	font-size: 25px;
@@ -225,7 +225,7 @@ a:hover {
 }
 
 .scoreBar:hover {
-	background-color: #AC7DF2;
+	background-color: #1093CE;
 	height: 30px;
 	position: relative;
 	font-size: 25px;
@@ -281,7 +281,7 @@ a:hover {
 	width: 20px;
 	height: 20px;
 	box-shadow: 1px 1px 1px gray;
-	background-color: gold;
+	background-color: #FED103;
 	color: black;
 	font-weight: bold;
 	font-size: 14px;
@@ -408,7 +408,7 @@ a:hover {
 
 .tooltipped::after{
 	background: rgba(212, 212, 212, 0.8);
-    border: 2px solid rgba(168, 120, 239, 0.8);
+    border: 2px solid rgba(16, 147, 206, 0.0);
     border-radius: 3px;
     content: attr(aria-label);
     display: inline-block;
